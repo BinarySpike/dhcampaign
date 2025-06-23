@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "docs:dev": "vitepress dev nathan",
+    "docs:build": "vitepress build nathan",
+    "docs:preview": "vitepress preview nathan"
+  },
+  "name": "dhcampaign",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BinarySpike/dhcampaign.git"
+  },
+  "author": "Nathan Goings <binaryspike@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/BinarySpike/dhcampaign/issues"
+  },
+  "homepage": "https://github.com/BinarySpike/dhcampaign#readme",
+  "description": "",
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}
