@@ -1,0 +1,24 @@
+.VPContent.is-home {
+    background-image: url('./landscape.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+}
+
+.VPContent.is-home .VPHero .heading {
+text-shadow:
+    -2px -2px 2px white,
+     2px -2px 2px white,
+    -2px  2px 2px white,
+     2px  2px 2px white,
+     0    0   2px white; /* subtle center glow */
+}
+
+.dark .VPContent.is-home .VPHero .heading {
+text-shadow:
+    -2px -2px 2px black,
+     2px -2px 2px black,
+    -2px  2px 2px black,
+     2px  2px 2px black,
+     0    0   2px black; /* subtle center glow */
+}

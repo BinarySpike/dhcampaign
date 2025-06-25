@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import customTagPlugin from './customTagPlugin'
 
 // https://vitepress.dev/reference/site-config
 import fs from 'fs';
@@ -42,6 +43,11 @@ export default defineConfig({
     ],
     search: {
       provider: 'local'
+    }
+  },
+  markdown: {
+    config: (md) => {
+      md.use(customTagPlugin)
     }
   }
 })

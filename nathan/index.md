@@ -5,8 +5,8 @@ layout: home
 hero:
   name: "Drylands of the Colossus"
   text: "A Daggerheart Campaign"
-  image:
-    src: /logo.png
+  # image:
+  #   src: /landscape.png
   #tagline: My great project tagline
   actions:
     - theme: brand
