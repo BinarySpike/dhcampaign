@@ -1,5 +1,5 @@
 .VPContent.is-home {
-    background-image: url('./landscape.png');
+    background-image: url('/landscape.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-origin: content-box;
