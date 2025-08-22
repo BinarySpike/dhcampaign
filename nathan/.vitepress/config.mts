@@ -17,6 +17,17 @@ const sessionItems = fs.readdirSync(sessionDir)
     };
   });
 
+  const mechanicsDir = path.join(__dirname, '../mechanics');
+  const mechanicsItems = fs.readdirSync(mechanicsDir)
+  //.sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+  .map(file => {
+    const mechanicName = file.split('.')[0];
+    return {
+      text: `${mechanicName}`,
+      link: `/mechanics/${mechanicName}`,
+    };
+  });
+
 
 
 export default defineConfig({
@@ -35,6 +46,10 @@ export default defineConfig({
         items: [
           { text: 'Welcome', link: '/welcome' }
         ]
+      },
+      {
+        text: 'Homebrew Mechanics',
+        items: mechanicsItems,
       },
       {
         text: 'Sessions',
