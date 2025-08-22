@@ -31,8 +31,9 @@ const sessionItems = fs.readdirSync(sessionDir)
 
 
 export default defineConfig({
-  title: "Drylands of the Colossus",
+  title: "A Drylands of the Colossus Campaign",
   description: "A Daggerheart campaign",
+  base: "/c/dhrylands",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
