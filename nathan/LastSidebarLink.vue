@@ -1,5 +1,5 @@
 <script setup>
-import { useData } from 'vitepress'
+import { useData, withBase } from 'vitepress'
 import { computed } from 'vue'
 
 const { theme, page } = useData()
@@ -37,6 +37,6 @@ const lastSidebarLink = computed(() => {
 
 <template>
   <span v-if="lastSidebarLink">
-    <a :href="lastSidebarLink.link">{{ lastSidebarLink.text }}</a>
+    <a :href="withBase(lastSidebarLink.link)">{{ lastSidebarLink.text }}</a>
   </span>
 </template>
